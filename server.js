@@ -23,7 +23,7 @@ app
 
   })
 
-  .use('/contacts', contactRoutes);
+  .use('/', contactRoutes);
 
 mongodb.initDb((err, mongodb) => {
 
