@@ -1,15 +1,15 @@
-GET http://localhost:8080/
+GET http://localhost:8080/contacts
 
 ###
-GET http://localhost:8080/6a01d5fc5f7bfe52f8add8e4
+GET http://localhost:8080/contacts/6a0930879dc96f37e4f63f39
 
 ###
-GET http://localhost:8080/6a01d6555f7bfe52f8add8e8
+GET http://localhost:8080/contacts/6a01d6555f7bfe52f8add8e8
 
 
 
 ### CREATE CONTACT
-POST http://localhost:8080/
+POST http://localhost:8080/contacts
 Content-Type: application/json
 
 {
@@ -21,7 +21,7 @@ Content-Type: application/json
 }
 
 ### UPDATE CONTACT
-PUT http://localhost:8080/6a091ac54b096c52cd0b3c7a
+PUT http://localhost:8080/contacts/6a09312c9dc96f37e4f63f3a
 Content-Type: application/json
 
 {
@@ -33,4 +33,4 @@ Content-Type: application/json
 }
 
 ### DELETE CONTACT
-DELETE http://localhost:8080/6a091ac54b096c52cd0b3c7a
+DELETE http://localhost:8080/contacts/6a0930879dc96f37e4f63f39

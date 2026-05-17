@@ -1,0 +1,23 @@
+const swaggerAutogen = require('swagger-autogen')();
+
+const doc = {
+
+  info: {
+    title: 'My API',
+    description: 'Contacts API',
+    version: '1.0.0'
+  },
+
+  host: process.env.API_HOST || 'localhost:8080',
+
+  schemes: process.env.NODE_ENV === 'production'
+    ? ['https']
+    : ['http']
+
+};
+
+const outputFile = './swagger.json';
+
+const endpointsFiles = ['./routes/index.js'];
+
+swaggerAutogen(outputFile, endpointsFiles, doc);
