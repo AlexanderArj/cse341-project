@@ -14,6 +14,7 @@ const app = express();
 
 app
   .use(bodyParser.json())
+  .use(express.json())
 
   .use((req, res, next) => {
 

@@ -7,3 +7,30 @@ GET http://localhost:8080/6a01d5fc5f7bfe52f8add8e4
 GET http://localhost:8080/6a01d6555f7bfe52f8add8e8
 
 
+
+### CREATE CONTACT
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "firstName": "George",
+  "lastName": "Harrison",
+  "email": "george.h@gmail.com",
+  "favoriteColor": "orange",
+  "birthday": "1970-06-15"
+}
+
+### UPDATE CONTACT
+PUT http://localhost:8080/6a091ac54b096c52cd0b3c7a
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Lennon",
+  "email": "jl@gmail.com",
+  "favoriteColor": "green",
+  "birthday": "2000-10-15"
+}
+
+### DELETE CONTACT
+DELETE http://localhost:8080/6a091ac54b096c52cd0b3c7a
